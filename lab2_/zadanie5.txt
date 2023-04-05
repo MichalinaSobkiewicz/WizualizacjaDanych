@@ -1,0 +1,1 @@
+Suma liczb od 1 do 10  wynosi: 55
