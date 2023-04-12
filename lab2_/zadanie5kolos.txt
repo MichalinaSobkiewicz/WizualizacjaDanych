@@ -1,0 +1,1 @@
+Suma wyrazów od 1 do 10  wynosi: 56
