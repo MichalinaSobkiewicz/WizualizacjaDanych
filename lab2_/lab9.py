@@ -79,6 +79,8 @@ b = macierzx.reshape(3, 27)
 c = macierzx.reshape(27, 3)
 # zmiana kształtu na macierz 81x1 (wektor)
 d = macierzx.reshape(81, 1)
+#
+e = macierzx.reshape(1, 81)
 
 print('zadanie 11')
 wektor = np.array([6, 2, 5, 7, 1, 7, 9, 8, 4, 10, 2, 14])
