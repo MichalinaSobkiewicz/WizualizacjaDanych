@@ -167,6 +167,8 @@ if result is not None:
     print(arr2)
 
 print('\nZADANIE 9')
+#Wykorzystaj poznane na zajęciach funkcje biblioteki Numpy
+#i stwórz macierz 5x5, która będzie zawierała kolejne wartości ciągu arytmetycznego.
 
 start = 1  # Początkowa wartość ciągu
 step = 2   # Różnica między kolejnymi wartościami
