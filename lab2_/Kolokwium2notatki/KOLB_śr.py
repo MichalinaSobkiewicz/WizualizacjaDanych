@@ -83,49 +83,29 @@ plt.legend(loc='upper center')
 plt.show()
 
 print('\n ZADANIE 3')
-# używając biblioteki pandas wczytaj zawartości pliku 'wine.data' do ramki danych i wykonaj następujące kroki:
-# -Utwórz nową ramkę danych, gdzie znajdzie się sto losowych wierszy, wiersze mogą się powtarzać.
-# -na nowej ramce danych dokonaj grupowania danych  po kolumnie class.
-# -na wykresie kołowym przedstaw  procentowy udział każdej z klasy
 
-# import pandas as pd
-# import matplotlib.pyplot as plt
+# df = pd.read_csv('wine.data')
 #
-# # Wczytanie pliku 'wine.data' do ramki danych
-# df = pd.read_csv('wine.data', header=None)
+# print(df)
 #
-# # Utworzenie nowej ramki danych z 100 losowymi wierszami
-# random_df = df.sample(n=100, replace=True)
+# randomowe = [np.random.randint(0, len(df)-1) for _ in range(100)]
+# df2 = df.iloc[randomowe]
 #
-# # Grupowanie danych po kolumnie 'class'
-# grouped = random_df.groupby(0).size()
+# grupy = df2.groupby('Class').size()
 #
-# # Tworzenie wykresu kołowego z procentowym udziałem każdej klasy
-# plt.pie(grouped, labels=grouped.index, autopct='%1.1f%%')
-#
-# # Dodanie tytułu wykresu
-# plt.title('Procentowy udział klas')
-#
-# # Wyświetlenie wykresu
+# plt.pie(grupy, labels=grupy.index, autopct='%1.1f%%')
+# plt.legend()
+# plt.title("Udział klas")
 # plt.show()
 
 print('ZADANIE 4')
-import seaborn as sns
-
-
-# # Wczytanie pliku 'wine.data' do ramki danych
-# df = pd.read_csv('wine.data', header=None)
+# df1 = pd.read_csv('wine.data')
+# plt.show()
 #
-# # Nadanie nazw kolumn
-# df.columns = ['class', 'alcohol', 'malic_acid', 'ash', 'alcalinity', 'magnesium', 'total_phenols', 'flavanoids', 'nonflavanoid_phenols', 'proanthocyanins', 'color_intensity', 'hue', 'OD280_OD315', 'proline']
+# plot = sns.barplot(data=df1, x='Class', y='Alcohol',
+#                    errorbar=None, hue='Class', estimator=np.mean,
+#                    dodge=False, palette=['red', 'green', 'yellow'])
+# plot.legend(title='Klasa')
+# plot.set(title='Średnie Wartośći Alkoholu')
 #
-# # Stworzenie wykresu kolumnowego
-# sns.barplot(data = df , x='class', y='alcohol',  errorbar=None , hue='Class' , palette = ['red','green','yellow'])
-#
-# # Dodanie etykiet osi i tytułu wykresu
-# plt.xlabel('Class')
-# plt.ylabel('Średnia wartość alkoholu')
-# plt.title('Średnia wartość alkoholu dla każdej klasy')
-#
-# # Wyświetlenie wykresu
 # plt.show()
