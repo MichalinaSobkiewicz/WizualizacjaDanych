@@ -83,6 +83,11 @@ plt.legend(loc='upper center')
 plt.show()
 
 print('\n ZADANIE 3')
+# używając biblioteki pandas wczytaj zawartości pliku 'wine.data' do ramki danych i wykonaj następujące kroki:
+# 1. Utwórz nową ramkę danych, gdzie znajdzie się sto losowych wierszy, wiersze mogą się powtarzać.
+# 2. na nowej ramce danych dokonaj grupowania danych  po kolumnie class.
+# 3. na wykresie kołowym przedstaw  procentowy udział każdej z klasy
+
 
 # df = pd.read_csv('wine.data')
 #
@@ -99,6 +104,11 @@ print('\n ZADANIE 3')
 # plt.show()
 
 print('ZADANIE 4')
+
+# za pomocą biblioteki pandas wczytaj zawartość pliku "wine.data",
+# następnie na wykresie kolumnowym z biblioteki seaborn przedstaw średnie wartości alkoholu dla każdej  z klasy (kolumny alcohol i class).
+# Na wykresie mają być podpisane etykiety dotyczące osi, legenda, tytuł wykresu. Ustaw styl wykresu na podstawowy.
+
 # df1 = pd.read_csv('wine.data')
 # plt.show()
 #
